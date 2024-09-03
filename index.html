@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+    <script>
+        let x=document.getElementById("btn")
+x.addEventListener("click",()=>{
+let z=["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
+hex="#";
+for(i=0;i<6;i++){
+    hex+= z[Math.floor(Math.random()*10)]
+}   
+document.body.style.backgroundColor=hex; 
+})
+    </script>
+</body>
+</html>
